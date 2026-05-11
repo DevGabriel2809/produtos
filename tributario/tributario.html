@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tenório & Andrade — Advocacia Tributária especializada em recuperação de créditos tributários. Recuperamos PIS/COFINS, ICMS, CSLL e muito mais.">
+    <title>Tenório & Andrade | Advocacia Tributária</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tributario.css">
+</head>
+<body>
+
+    <!-- ===================== NAVEGAÇÃO ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-name">Tenório <em>&amp;</em> Andrade</span>
+                <span class="logo-tagline">Advocacia Tributária</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#processo">Processo</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contato" class="nav-cta">Consulta Gratuita</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <div class="hero-text">
+                <p class="hero-eyebrow fade-in-up delay-1">Especialistas em Recuperação de Créditos Tributários</p>
+                <h1 class="hero-title fade-in-up delay-2">
+                    Recuperamos<br>
+                    o que é<br>
+                    <em>seu.</em>
+                </h1>
+                <p class="hero-desc fade-in-up delay-3">
+                    Identificamos tributos pagos indevidamente e transformamos créditos 
+                    esquecidos em resultado financeiro real para sua empresa — com precisão 
+                    técnica e atuação estratégica comprovada.
+                </p>
+                <div class="hero-actions fade-in-up delay-4">
+                    <a href="#contato" class="btn-primary">
+                        <span>Diagnóstico Gratuito</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#servicos" class="btn-ghost">Nossas Soluções</a>
+                </div>
+            </div>
+
+            <div class="hero-visual fade-in-right delay-2">
+                <div class="hero-card glass">
+                    <div class="hero-stat">
+                        <div class="stat-num-wrap">
+                            <span class="hero-stat-prefix">R$</span>
+                            <span class="hero-stat-value" data-target="850">0</span>
+                            <span class="hero-stat-suffix">M+</span>
+                        </div>
+                        <p>em créditos recuperados</p>
+                    </div>
+                    <div class="hero-divider"></div>
+                    <div class="hero-stat">
+                        <div class="stat-num-wrap">
+                            <span class="hero-stat-value" data-target="1200">0</span>
+                            <span class="hero-stat-suffix">+</span>
+                        </div>
+                        <p>empresas atendidas</p>
+                    </div>
+                    <div class="hero-divider"></div>
+                    <div class="hero-stat">
+                        <div class="stat-num-wrap">
+                            <span class="hero-stat-value" data-target="98">0</span>
+                            <span class="hero-stat-suffix">%</span>
+                        </div>
+                        <p>de taxa de êxito</p>
+                    </div>
+                </div>
+                <div class="hero-badge glass">
+                    <div class="badge-seal">⚖</div>
+                    <div class="badge-text">
+                        <strong>OAB/PE Reconhecido</strong>
+                        <span>Desde 2009</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span class="scroll-label">Descubra mais</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===================== STATS BAR ===================== -->
+    <div class="statsbar">
+        <div class="statsbar-inner container">
+            <div class="sbar-item">
+                <span class="sbar-value"><span class="counter" data-target="15">0</span>+</span>
+                <span class="sbar-label">Anos de Experiência</span>
+            </div>
+            <div class="sbar-sep"></div>
+            <div class="sbar-item">
+                <span class="sbar-value"><span class="counter" data-target="3200">0</span>+</span>
+                <span class="sbar-label">Processos Concluídos</span>
+            </div>
+            <div class="sbar-sep"></div>
+            <div class="sbar-item">
+                <span class="sbar-value">R$ <span class="counter" data-target="850">0</span>M+</span>
+                <span class="sbar-label">Créditos Recuperados</span>
+            </div>
+            <div class="sbar-sep"></div>
+            <div class="sbar-item">
+                <span class="sbar-value"><span class="counter" data-target="98">0</span>%</span>
+                <span class="sbar-label">Taxa de Êxito</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== SOBRE ===================== -->
+    <section class="about section" id="sobre">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual reveal-left">
+                    <div class="about-art">
+                        <div class="art-ring ring-1"></div>
+                        <div class="art-ring ring-2"></div>
+                        <div class="art-ring ring-3"></div>
+                        <div class="art-center">
+                            <span>TA</span>
+                        </div>
+                        <div class="art-dot dot-1"></div>
+                        <div class="art-dot dot-2"></div>
+                        <div class="art-dot dot-3"></div>
+                    </div>
+                    <div class="about-badge glass">
+                        <strong>15+</strong>
+                        <span>Anos de<br>Excelência</span>
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <p class="eyebrow">Quem Somos</p>
+                    <h2 class="sec-title">Advocacia tributária de <em>alta performance</em></h2>
+                    <p class="about-text">
+                        Fundado em 2009 em Recife, o escritório Tenório &amp; Andrade se consolidou 
+                        como referência nordestina em recuperação de créditos tributários. Nossa equipe 
+                        combina profundo conhecimento técnico com visão estratégica para maximizar 
+                        resultados concretos.
+                    </p>
+                    <p class="about-text">
+                        Atuamos nas esferas administrativa e judicial com foco em identificar 
+                        oportunidades que passam despercebidas — e transformá-las em vantagem 
+                        financeira imediata.
+                    </p>
+                    <div class="about-features">
+                        <div class="feat-item">
+                            <span class="feat-icon">◈</span>
+                            <div>
+                                <strong>Diagnóstico Personalizado</strong>
+                                <p>Análise completa da situação tributária da sua empresa, sem custo inicial.</p>
+                            </div>
+                        </div>
+                        <div class="feat-item">
+                            <span class="feat-icon">◈</span>
+                            <div>
+                                <strong>Equipe Multidisciplinar</strong>
+                                <p>Advogados, contadores e analistas trabalhando de forma integrada.</p>
+                            </div>
+                        </div>
+                        <div class="feat-item">
+                            <span class="feat-icon">◈</span>
+                            <div>
+                                <strong>Honorários de Êxito</strong>
+                                <p>Você só paga quando o resultado é efetivamente obtido.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVIÇOS ===================== -->
+    <section class="services section" id="servicos">
+        <div class="container">
+            <div class="sec-header reveal-up">
+                <p class="eyebrow">O que Fazemos</p>
+                <h2 class="sec-title">Nossas <em>especialidades</em></h2>
+                <p class="sec-sub">Soluções tributárias completas para empresas de todos os portes e regimes fiscais.</p>
+            </div>
+            <div class="services-grid">
+                <div class="svc-card reveal-up delay-1">
+                    <div class="svc-glow"></div>
+                    <div class="svc-tag">Mais buscado</div>
+                    <div class="svc-icon">◈</div>
+                    <h3>Recuperação de PIS/COFINS</h3>
+                    <p>Revisão de apuração, créditos extemporâneos e restituição de valores pagos a maior nos últimos 5 anos fiscais.</p>
+                </div>
+                <div class="svc-card reveal-up delay-2">
+                    <div class="svc-glow"></div>
+                    <div class="svc-tag">Tese STF</div>
+                    <div class="svc-icon">◈</div>
+                    <h3>Exclusão do ICMS da Base PIS/COFINS</h3>
+                    <p>Aproveitamento da "Tese do Século" — decisão histórica do STF que garante exclusão do ICMS da base de cálculo.</p>
+                </div>
+                <div class="svc-card reveal-up delay-3">
+                    <div class="svc-glow"></div>
+                    <div class="svc-icon">◈</div>
+                    <h3>Recuperação de CSLL e IRPJ</h3>
+                    <p>Análise de pagamentos indevidos, compensações e restituições de Contribuição Social e Imposto de Renda Pessoa Jurídica.</p>
+                </div>
+                <div class="svc-card reveal-up delay-1">
+                    <div class="svc-glow"></div>
+                    <div class="svc-icon">◈</div>
+                    <h3>Planejamento Tributário</h3>
+                    <p>Estruturação jurídico-fiscal para redução legal da carga tributária, adequando regime e operações ao perfil da empresa.</p>
+                </div>
+                <div class="svc-card reveal-up delay-2">
+                    <div class="svc-glow"></div>
+                    <div class="svc-icon">◈</div>
+                    <h3>Defesas Administrativas</h3>
+                    <p>Impugnações, recursos e contestações perante Receita Federal, CARF e órgãos estaduais com sólida fundamentação técnica.</p>
+                </div>
+                <div class="svc-card reveal-up delay-3">
+                    <div class="svc-glow"></div>
+                    <div class="svc-icon">◈</div>
+                    <h3>Contencioso Tributário</h3>
+                    <p>Ações anulatórias, mandados de segurança, repetição de indébito e embargos à execução fiscal em qualquer instância.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROCESSO ===================== -->
+    <section class="process section" id="processo">
+        <div class="container">
+            <div class="sec-header reveal-up">
+                <p class="eyebrow">Como Trabalhamos</p>
+                <h2 class="sec-title">Processo <em>transparente</em><br>do início ao resultado</h2>
+            </div>
+            <div class="timeline">
+                <div class="tl-item reveal-left">
+                    <div class="tl-number">01</div>
+                    <div class="tl-card glass">
+                        <h3>Diagnóstico Tributário</h3>
+                        <p>Analisamos 5 anos de escrituração fiscal para identificar todos os créditos disponíveis, teses aplicáveis e potencial de recuperação estimado.</p>
+                    </div>
+                </div>
+                <div class="tl-item tl-right reveal-right">
+                    <div class="tl-number">02</div>
+                    <div class="tl-card glass">
+                        <h3>Mapeamento de Créditos</h3>
+                        <p>Calculamos o valor exato dos créditos recuperáveis e entregamos relatório detalhado com todas as oportunidades identificadas e estratégia sugerida.</p>
+                    </div>
+                </div>
+                <div class="tl-item reveal-left">
+                    <div class="tl-number">03</div>
+                    <div class="tl-card glass">
+                        <h3>Definição da Estratégia</h3>
+                        <p>Escolhemos a via mais eficiente — administrativa ou judicial — e estruturamos o plano de ação para maximizar o resultado e reduzir o prazo.</p>
+                    </div>
+                </div>
+                <div class="tl-item tl-right reveal-right">
+                    <div class="tl-number">04</div>
+                    <div class="tl-card glass">
+                        <h3>Execução e Acompanhamento</h3>
+                        <p>Conduzimos todo o processo jurídico e mantemos você informado com relatórios periódicos e acesso ao andamento processual em tempo real.</p>
+                    </div>
+                </div>
+                <div class="tl-item reveal-left">
+                    <div class="tl-number">05</div>
+                    <div class="tl-card glass">
+                        <h3>Resultado e Utilização</h3>
+                        <p>Recuperado o crédito, orientamos sobre as formas mais vantajosas de utilização: compensação com tributos futuros ou restituição em espécie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== DEPOIMENTOS ===================== -->
+    <section class="testimonials section" id="depoimentos">
+        <div class="container">
+            <div class="sec-header reveal-up">
+                <p class="eyebrow">Depoimentos</p>
+                <h2 class="sec-title">O que nossos <em>clientes dizem</em></h2>
+            </div>
+            <div class="tslider-wrap">
+                <div class="tslider" id="tSlider">
+                    <div class="tcard glass">
+                        <div class="tcard-stars">★★★★★</div>
+                        <blockquote>"A Tenório &amp; Andrade identificou R$ 2,3 milhões em créditos tributários que nenhum outro escritório havia encontrado. Resultado excepcional em tempo recorde — superou todas as expectativas."</blockquote>
+                        <div class="tcard-author">
+                            <div class="tcard-avatar">MF</div>
+                            <div>
+                                <strong>Marcelo Figueiredo</strong>
+                                <span>CFO — Grupo Nordeste Alimentos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tcard glass">
+                        <div class="tcard-stars">★★★★★</div>
+                        <blockquote>"Recuperamos mais de R$ 800 mil em ICMS indevidamente recolhido. O processo foi conduzido com total transparência e profissionalismo. Recomendo sem hesitar a qualquer empresa do Nordeste."</blockquote>
+                        <div class="tcard-author">
+                            <div class="tcard-avatar">CC</div>
+                            <div>
+                                <strong>Carolina Costa</strong>
+                                <span>Diretora Financeira — TechNordeste S.A.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tcard glass">
+                        <div class="tcard-stars">★★★★★</div>
+                        <blockquote>"Além da recuperação dos créditos, o planejamento tributário implementado pela equipe reduziu nossa carga fiscal em 32% ao ano. Uma parceria indispensável para o crescimento da empresa."</blockquote>
+                        <div class="tcard-author">
+                            <div class="tcard-avatar">RB</div>
+                            <div>
+                                <strong>Roberto Bezerra</strong>
+                                <span>Sócio-Proprietário — Construtora Bezerraverde</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tcontrols">
+                    <button class="tctrl" id="tPrev" aria-label="Anterior">←</button>
+                    <div class="tdots" id="tDots"></div>
+                    <button class="tctrl" id="tNext" aria-label="Próximo">→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="faq section" id="faq">
+        <div class="container">
+            <div class="faq-grid">
+                <div class="faq-left reveal-left">
+                    <p class="eyebrow">Dúvidas Frequentes</p>
+                    <h2 class="sec-title">Tire suas <em>dúvidas</em></h2>
+                    <p class="faq-desc">Ainda tem perguntas? Nossa equipe está disponível para um atendimento personalizado sem compromisso.</p>
+                    <a href="#contato" class="btn-outline">Fale Conosco</a>
+                </div>
+                <div class="faq-list reveal-right">
+                    <div class="faq-item">
+                        <button class="faq-q">
+                            <span>Quanto tempo leva para recuperar os créditos?</span>
+                            <span class="faq-chevron">+</span>
+                        </button>
+                        <div class="faq-a">
+                            <p>O prazo varia conforme a via escolhida. Na via administrativa, o processo costuma levar de 6 a 18 meses. Na via judicial, de 1 a 3 anos. Em muitos casos, conseguimos homologação de compensações em menos de 12 meses.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q">
+                            <span>Como são cobrados os honorários?</span>
+                            <span class="faq-chevron">+</span>
+                        </button>
+                        <div class="faq-a">
+                            <p>Trabalhamos predominantemente com honorários de êxito — um percentual sobre o valor efetivamente recuperado. Isso significa que o cliente não tem custo inicial e só paga quando obtém resultado concreto.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q">
+                            <span>Quais documentos são necessários para o diagnóstico?</span>
+                            <span class="faq-chevron">+</span>
+                        </button>
+                        <div class="faq-a">
+                            <p>Para o diagnóstico inicial, precisamos das EFD-Contribuições, SPED Fiscal, DCTF e arquivos de escrituração dos últimos 5 anos. Nossa equipe orienta sobre todo o processo de coleta e envio dos documentos.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q">
+                            <span>Empresas do Simples Nacional também podem recuperar créditos?</span>
+                            <span class="faq-chevron">+</span>
+                        </button>
+                        <div class="faq-a">
+                            <p>Sim. Mesmo empresas do Simples Nacional podem ter créditos a recuperar, especialmente relacionados a INSS sobre receita bruta, ICMS e ISS pagos a maior. Realizamos diagnóstico específico para cada regime tributário.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q">
+                            <span>Atendem empresas de outros estados?</span>
+                            <span class="faq-chevron">+</span>
+                        </button>
+                        <div class="faq-a">
+                            <p>Sim. Atuamos em todo o território nacional com atendimento remoto completo. Possuímos equipe habilitada nos principais estados e parceria com escritórios locais para questões estaduais específicas quando necessário.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section class="contact section" id="contato">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <p class="eyebrow">Fale Conosco</p>
+                    <h2 class="sec-title">Recupere o que<br>é <em>seu.</em></h2>
+                    <p class="contact-desc">Solicite um diagnóstico gratuito e descubra quanto sua empresa pode recuperar. Sem compromisso, sem custo inicial.</p>
+                    <div class="cinfo-items">
+                        <div class="cinfo-item">
+                            <span class="cinfo-icon">📍</span>
+                            <div>
+                                <strong>Endereço</strong>
+                                <p>Av. Agamenon Magalhães, 4600, 10° andar<br>Recife — PE, 52021-170</p>
+                            </div>
+                        </div>
+                        <div class="cinfo-item">
+                            <span class="cinfo-icon">📞</span>
+                            <div>
+                                <strong>Telefone &amp; WhatsApp</strong>
+                                <p>(81) 3421-0000 / (81) 99900-0000</p>
+                            </div>
+                        </div>
+                        <div class="cinfo-item">
+                            <span class="cinfo-icon">✉️</span>
+                            <div>
+                                <strong>E-mail</strong>
+                                <p>contato@tenorioandrade.adv.br</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrap reveal-right">
+                    <form class="cform glass" id="contactForm" novalidate>
+                        <div class="cform-group">
+                            <label for="c-name">Nome Completo</label>
+                            <input type="text" id="c-name" name="name" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="cform-group">
+                            <label for="c-company">Empresa</label>
+                            <input type="text" id="c-company" name="company" placeholder="Nome da empresa" required>
+                        </div>
+                        <div class="cform-row">
+                            <div class="cform-group">
+                                <label for="c-email">E-mail</label>
+                                <input type="email" id="c-email" name="email" placeholder="seu@email.com" required>
+                            </div>
+                            <div class="cform-group">
+                                <label for="c-phone">Telefone</label>
+                                <input type="tel" id="c-phone" name="phone" placeholder="(81) 99999-9999">
+                            </div>
+                        </div>
+                        <div class="cform-group">
+                            <label for="c-revenue">Faturamento Anual Aproximado</label>
+                            <select id="c-revenue" name="revenue">
+                                <option value="">Selecione uma faixa</option>
+                                <option>Até R$ 500 mil</option>
+                                <option>R$ 500 mil a R$ 2 milhões</option>
+                                <option>R$ 2 milhões a R$ 10 milhões</option>
+                                <option>Acima de R$ 10 milhões</option>
+                            </select>
+                        </div>
+                        <div class="cform-group">
+                            <label for="c-msg">Mensagem (opcional)</label>
+                            <textarea id="c-msg" name="message" rows="3" placeholder="Descreva brevemente sua situação tributária..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">
+                            <span>Solicitar Diagnóstico Gratuito</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                        <p class="form-note">Ao enviar, você concorda com nossa política de privacidade. Retornaremos em até 24h.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== RODAPÉ ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">Tenório <em>&amp;</em> Andrade</div>
+                    <p>Advocacia Tributária especializada em recuperação de créditos e planejamento fiscal. Recife, Pernambuco.</p>
+                    <p class="footer-oab">OAB/PE nº 00.000 | OAB/SP nº 000.000</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#servicos">Recuperação de PIS/COFINS</a></li>
+                        <li><a href="#servicos">Exclusão do ICMS</a></li>
+                        <li><a href="#servicos">Recuperação CSLL/IRPJ</a></li>
+                        <li><a href="#servicos">Planejamento Tributário</a></li>
+                        <li><a href="#servicos">Defesas Administrativas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Escritório</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#processo">Como Trabalhamos</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#faq">Perguntas Frequentes</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <p>(81) 3421-0000</p>
+                    <p>contato@tenorioandrade.adv.br</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Instagram">ig</a>
+                        <a href="#" aria-label="WhatsApp">wa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Tenório &amp; Andrade Advocacia. Todos os direitos reservados.</p>
+                <p>Este site tem caráter meramente informativo e não configura consulta jurídica.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

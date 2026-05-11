@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gabriel Andrade · Sites Jurídicos Premium</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#sobre" onclick="closeMobile()">Sobre</a>
+  <a href="#produtos" onclick="closeMobile()">Produtos</a>
+  <a href="#diferenciais" onclick="closeMobile()">Diferenciais</a>
+  <a href="#processo" onclick="closeMobile()">Processo</a>
+  <a href="#faq" onclick="closeMobile()">FAQ</a>
+  <a href="#contato" onclick="closeMobile()" style="color:var(--gold)">Solicitar orçamento</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="nav-monogram">GA</div>
+      <div>
+        <span class="nav-name">Gabriel Andrade</span>
+        <span class="nav-sub">Sites Jurídicos</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#sobre">Sobre</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#processo">Processo</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="nav-right">
+      <button class="btn-theme" id="themeToggle" title="Alternar tema">☽</button>
+      <a href="#contato" class="btn-nav">Solicitar orçamento</a>
+      <button class="hamburger" id="hamburgerBtn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-content">
+    <div>
+      <span class="hero-label">Recife, PE · Atendimento Nacional</span>
+      <h1 class="hero-h1">Sites jurídicos que <em>vendem</em> antes do primeiro contato.</h1>
+      <p class="hero-lead">Cada escritório merece uma presença digital que combine autoridade, conversão e identidade. Direito civil, trabalhista e tributário — com templates prontos e personalizados.</p>
+      <div class="hero-actions">
+        <a href="#produtos" class="btn-primary">Ver os produtos →</a>
+        <a href="#contato" class="btn-ghost">Solicitar orçamento</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <span class="hero-card-label">Produtos disponíveis</span>
+      <div class="hero-stat" id="heroCounter">06</div>
+      <div class="hero-stat-label">modelos disponíveis para entrega em até 24h cada</div>
+      <div class="hero-divider"></div>
+      <div class="hero-feat-row"><div class="feat-dot"></div><span>Código limpo e comentado</span></div>
+      <div class="hero-feat-row"><div class="feat-dot"></div><span>Totalmente responsivo (mobile-first)</span></div>
+      <div class="hero-feat-row"><div class="feat-dot"></div><span>Animações e scroll reveal nativos</span></div>
+      <div class="hero-feat-row"><div class="feat-dot"></div><span>Personalização de marca incluída</span></div>
+      <div class="hero-feat-row"><div class="feat-dot"></div><span>Pronto para deploy em qualquer host</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track" id="tickerTrack">
+    <span class="ticker-item"><span>·</span> Direito Cível</span>
+    <span class="ticker-item"><span>·</span> Advocacia Trabalhista</span>
+    <span class="ticker-item"><span>·</span> Direito Tributário</span>
+    <span class="ticker-item"><span>·</span> Responsivo & Acessível</span>
+    <span class="ticker-item"><span>·</span> Pronto para Deploy</span>
+    <span class="ticker-item"><span>·</span> Personalização de Marca</span>
+    <span class="ticker-item"><span>·</span> Código Limpo</span>
+    <span class="ticker-item"><span>·</span> HTML + CSS + JS puro</span>
+    <span class="ticker-item"><span>·</span> Direito Cível</span>
+    <span class="ticker-item"><span>·</span> Advocacia Trabalhista</span>
+    <span class="ticker-item"><span>·</span> Direito Tributário</span>
+    <span class="ticker-item"><span>·</span> Responsivo & Acessível</span>
+    <span class="ticker-item"><span>·</span> Pronto para Deploy</span>
+    <span class="ticker-item"><span>·</span> Personalização de Marca</span>
+    <span class="ticker-item"><span>·</span> Código Limpo</span>
+    <span class="ticker-item"><span>·</span> HTML + CSS + JS puro</span>
+  </div>
+</div>
+
+<!-- PRODUTOS -->
+<section class="section" id="produtos">
+  <div class="container">
+    <div class="products-header reveal">
+      <span class="section-label">Portfólio</span>
+      <h2 class="section-h2">Escolha a sua área — e o seu estilo.</h2>
+      <p class="section-lead">Cada área jurídica tem duas versões com identidades visuais distintas. Mesma qualidade técnica, personalidades diferentes.</p>
+    </div>
+
+    <!-- CIVEL -->
+    <div class="product-category">
+      <div class="category-header reveal">
+        <div class="category-icon">⚖</div>
+        <div>
+          <div class="category-title">Direito Cível</div>
+          <div class="category-count">2 modelos disponíveis</div>
+        </div>
+      </div>
+      <div class="product-grid">
+        <div class="product-card reveal reveal-delay-1">
+          <div class="product-card-top">
+            <div class="product-number">01</div>
+            <div class="product-badge badge-civel">Cível · Clássico</div>
+            <div class="product-name">Vellum & Costa</div>
+            <div class="product-tagline">Presença editorial, sobriedade de boutique jurídica premium</div>
+          </div>
+          <div class="product-card-bottom">
+            <div class="product-features">
+              <div class="product-feature"><div class="product-feature-dot"></div>Hero com texto + card de diagnóstico lateral</div>
+              <div class="product-feature"><div class="product-feature-dot"></div>Seção manifesto editorial</div>
+              <div class="product-feature"><div class="product-feature-dot"></div>Grid de áreas de atuação com hover spotlight</div>
+              <div class="product-feature"><div class="product-feature-dot"></div>Timeline de método + caso fictício + FAQ</div>
+            </div>
+            <div class="product-footer">
+              <div>
+                <div class="product-price">R$ 297</div>
+                <div class="product-price-label">entrega em 24h</div>
+              </div>
+              <a href="civel/index.html"><button class="btn-product" id="visit">Visitar modelo</button></a>
+              <button class="btn-product" onclick="openContact('Cível · Vellum & Costa (Modelo 01)')">Quero este →</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card reveal reveal-delay-2">
+          <div class="product-card-top">
+            <div class="product-number">02</div>
+            <div class="product-badge badge-civel">Cível · Contemporâneo</div>
+            <div class="product-name">Vale & Sardenberg</div>
+            <div class="product-tagline">Visual limpo e estratégico — dossiê lateral e jornada guiada</div>
+          </div>
+          <div class="product-card-bottom">
+            <div class="product-features">
+              <div class="product-feature"><div class="product-feature-dot"></div>Layout com dossiê jurídico animado</div>
+              <div class="product-feature"><div class="product-feature-dot"></div>Seção de jornada em etapas visuais</div>
+              <div class="product-feature"><div class="product-feature-dot"></div>Foco em contratos, família e patrimônio</div>
+              <div class="product-feature"><div class="product-feature-dot"></div>Formulário de contato direto com triagem</div>
+            </div>
+            <div class="product-footer">
+              <div>
+                <div class="product-price">R$ 297</div>
+                <div class="product-price-label">entrega em 24h</div>
+              </div>
+              <a href="civel2/index.html"><button class="btn-product" id="visit">Visitar modelo</button></a>
+              <button class="btn-product" onclick="openContact('Cível · Vale & Sardenberg (Modelo 02)')">Quero este →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TRABALHISTA -->
+    <div class="product-category">
+      <div class="category-header reveal">
+        <div class="category-icon">⚡</div>
+        <div>
+          <div class="category-title">Direito Trabalhista</div>
+          <div class="category-count">2 modelos disponíveis</div>
+        </div>
+      </div>
+      <div class="product-grid">
+        <div class="product-card reveal reveal-delay-1">
+          <div class="product-card-top">
+            <div class="product-number">03</div>
+            <div class="product-badge badge-trabalhista">Trabalhista · Forte</div>
+            <div class="product-name">Martelo Norte</div>
+            <div class="product-tagline">Conversão direta com urgência — fala com quem está com medo de prazo</div>
+          </div>
+          <div class="product-card-bottom">
+            <div class="product-features">
+              <div class="product-feature"><div class="product-feature-dot"></div>Hero com triagem rápida de 4 perguntas</div>
+              <div class="product-feature"><div class="product-feature-dot"></div>Blocos de urgência e serviços por perfil</div>
+              <div class="product-feature"><div class="product-feature-dot"></div>Grade de provas + seção para empresas</div>
+              <div class="product-feature"><div class="product-feature-dot"></div>Formulário de triagem 24h</div>
+            </div>
+            <div class="product-footer">
+              <div>
+                <div class="product-price">R$ 297</div>
+                <div class="product-price-label">entrega em 24h</div>
+              </div>
+              <a href="trabalhista/index.html"><button class="btn-product" id="visit">Visitar modelo</button></a>
+              <button class="btn-product" onclick="openContact('Trabalhista · Martelo Norte (Modelo 03)')">Quero este →</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card reveal reveal-delay-2">
+          <div class="product-card-top">
+            <div class="product-number">04</div>
+            <div class="product-badge badge-trabalhista">Trabalhista · Urbano</div>
+            <div class="product-name">Rocha Nóbrega</div>
+            <div class="product-tagline">Visual forte e urbano com card de cálculo e protocolo visual</div>
+          </div>
+          <div class="product-card-bottom">
+            <div class="product-features">
+              <div class="product-feature"><div class="product-feature-dot"></div>Hero com calculator card de risco</div>
+              <div class="product-feature"><div class="product-feature-dot"></div>Grid de frentes para empregado e empresa</div>
+              <div class="product-feature"><div class="product-feature-dot"></div>Protocolo de atendimento em etapas</div>
+              <div class="product-feature"><div class="product-feature-dot"></div>Estética mais agressiva e de conversão</div>
+            </div>
+            <div class="product-footer">
+              <div>
+                <div class="product-price">R$ 297</div>
+                <div class="product-price-label">entrega em 24h</div>
+              </div>
+              <a href="trabalhista2/"><button class="btn-product" id="visit">Visitar modelo</button></a>
+              <button class="btn-product" onclick="openContact('Trabalhista · Rocha Nóbrega (Modelo 04)')">Quero este →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TRIBUTARIO -->
+    <div class="product-category">
+      <div class="category-header reveal">
+        <div class="category-icon">§</div>
+        <div>
+          <div class="category-title">Direito Tributário</div>
+          <div class="category-count">2 modelos disponíveis</div>
+        </div>
+      </div>
+      <div class="product-grid">
+        <div class="product-card reveal reveal-delay-1">
+          <div class="product-card-top">
+            <div class="product-number">05</div>
+            <div class="product-badge badge-tributario">Tributário · Premium</div>
+            <div class="product-name">Tenório & Andrade</div>
+            <div class="product-tagline">Site de recuperação de créditos com canvas animado e glassmorphism</div>
+          </div>
+          <div class="product-card-bottom">
+            <div class="product-features">
+              <div class="product-feature"><div class="product-feature-dot"></div>Canvas de partículas animadas no hero</div>
+              <div class="product-feature"><div class="product-feature-dot"></div>Cards com counters de R$ e estatísticas</div>
+              <div class="product-feature"><div class="product-feature-dot"></div>Seções de processo, depoimentos e FAQ</div>
+              <div class="product-feature"><div class="product-feature-dot"></div>Layout mais sofisticado com glassmorphism</div>
+            </div>
+            <div class="product-footer">
+              <div>
+                <div class="product-price">R$ 397</div>
+                <div class="product-price-label">modelo premium</div>
+              </div>
+              <a href="trubitario/index.html"><button class="btn-product" id="visit">Visitar modelo</button></a>
+              <button class="btn-product" onclick="openContact('Tributário · Tenório & Andrade (Modelo 05)')">Quero este →</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card reveal reveal-delay-2">
+          <div class="product-card-top">
+            <div class="product-number">06</div>
+            <div class="product-badge badge-tributario">Tributário · Tech</div>
+            <div class="product-name">NexoFiscal</div>
+            <div class="product-tagline">Estética executiva e tecnológica — fiscal sem caixa-preta</div>
+          </div>
+          <div class="product-card-bottom">
+            <div class="product-features">
+              <div class="product-feature"><div class="product-feature-dot"></div>Dashboard window com fluxo de diagnóstico</div>
+              <div class="product-feature"><div class="product-feature-dot"></div>Cards executivos com proof pills</div>
+              <div class="product-feature"><div class="product-feature-dot"></div>Foco em créditos tributários e inteligência fiscal</div>
+              <div class="product-feature"><div class="product-feature-dot"></div>Comunicação técnica e profissional</div>
+            </div>
+            <div class="product-footer">
+              <div>
+                <div class="product-price">R$ 397</div>
+                <div class="product-price-label">modelo premium</div>
+              </div>
+              <a href="trubitario2/index.html"><button class="btn-product" id="visit">Visitar modelo</button></a>
+              <button class="btn-product" onclick="openContact('Tributário · NexoFiscal (Modelo 06)')">Quero este →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BUNDLE -->
+    <div class="product-card reveal" style="border-color: var(--gold3); position: relative;">
+      <div style="position: absolute; top: -1px; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent);"></div>
+      <div class="product-card-top" style="padding: 32px 32px 24px;">
+        <div class="product-badge badge-tributario" style="margin-bottom: 16px;">🎁 Oferta completa</div>
+        <div class="product-name" style="font-size: 1.8rem;">Pacote Completo — todos os 6 modelos</div>
+        <div class="product-tagline" style="font-size: 0.95rem; margin-top: 6px;">Revenda à vontade. Use para apresentar portfólio a clientes. Todos os arquivos comentados e organizados.</div>
+      </div>
+      <div class="product-card-bottom" style="padding: 20px 32px 32px;">
+        <div class="product-footer" style="margin-top: 0; padding-top: 0; border: none;">
+          <div>
+            <div style="font-size: 0.85rem; color: var(--text3); text-decoration: line-through; margin-bottom: 4px;">R$ 2.082 separados</div>
+            <div class="product-price" style="font-size: 2.2rem;">R$ 1.197</div>
+            <div class="product-price-label">6 modelos completos · entrega em até 72h</div>
+          </div>
+          <button class="btn-primary" onclick="openContact('Pacote Completo — todos os 6 modelos')">Quero o pacote →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="section about" id="sobre">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left">
+        <span class="section-label">Quem está por trás</span>
+        <div class="big-quote reveal">"Direito e tecnologia deixaram de ser mundos separados. Eu vivo nos dois."</div>
+        <p class="about-body reveal reveal-delay-1">Sou Gabriel Andrade — estudante de Direito na Faculdade Central do Recife, estagiário em direito tributário na EIKON e em bancário/cível na Martinez e Martinez. Paralelamente, cursando Técnico em Redes de Computadores.</p>
+        <p class="about-body reveal reveal-delay-2">Essa combinação rara entre formação jurídica sólida e fluência técnica real (Java, Python, JavaScript, SQL) me permite entregar sites que entendem o que um escritório de advocacia realmente precisa comunicar — não apenas o que parece bonito.</p>
+        <div class="about-tags reveal reveal-delay-3">
+          <span class="tag">HTML · CSS · JS</span>
+          <span class="tag">Direito Civil</span>
+          <span class="tag">Tributário</span>
+          <span class="tag">Trabalhista</span>
+          <span class="tag">Licitações</span>
+          <span class="tag">LGPD</span>
+          <span class="tag">Recife · PE</span>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="stat-card reveal reveal-delay-1">
+          <div class="stat-card-num">2+</div>
+          <div class="stat-card-label">Anos de experiência jurídica ativa</div>
+          <div class="stat-card-desc">Estágios simultâneos em tributário e cível/bancário, mais análise de licitações</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-2">
+          <div class="stat-card-num">6</div>
+          <div class="stat-card-label">Modelos prontos para entrega</div>
+          <div class="stat-card-desc">Cível, trabalhista e tributário — dois designs distintos por área</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-3">
+          <div class="stat-card-num">100%</div>
+          <div class="stat-card-label">Código próprio, sem frameworks pesados</div>
+          <div class="stat-card-desc">HTML + CSS + JS puro. Zero dependências, máxima performance e portabilidade</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="section diff" id="diferenciais">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Por que eu</span>
+      <h2 class="section-h2">Não é só um template bonito.</h2>
+      <p class="section-lead">A maioria dos sites jurídicos parece escritório de advocacia genérico. Estes não. E tem um motivo para isso.</p>
+    </div>
+    <div class="diff-grid">
+      <div class="diff-card reveal reveal-delay-1">
+        <div class="diff-icon">⚖️</div>
+        <div class="diff-title">Entende o que você vende</div>
+        <div class="diff-body">Sou estagiário jurídico ativo em tributário e cível. Os textos, estruturas e calls-to-action dos sites foram pensados por quem vive dentro dos escritórios — não por quem copia landing pages de agência.</div>
+      </div>
+      <div class="diff-card reveal reveal-delay-2">
+        <div class="diff-icon">⚡</div>
+        <div class="diff-title">Performance real, zero framework</div>
+        <div class="diff-body">HTML + CSS + JS puro. Sem React, Next.js ou dependências que somem em 2 anos. Seus clientes abrem em milissegundos no celular, no interior do Nordeste, com 3G ruim.</div>
+      </div>
+      <div class="diff-card reveal reveal-delay-3">
+        <div class="diff-icon">🎨</div>
+        <div class="diff-title">Design com intenção editorial</div>
+        <div class="diff-body">Cada modelo tem uma identidade visual própria: tipografia escolhida, paleta construída, hierarquia pensada. Não é um tema do WordPress com logo trocado.</div>
+      </div>
+      <div class="diff-card reveal reveal-delay-1">
+        <div class="diff-icon">📱</div>
+        <div class="diff-title">Mobile-first de verdade</div>
+        <div class="diff-body">Todos os modelos são testados e refinados em telas pequenas. Menu hamburguer animado, formulários sem atrito, textos legíveis sem zoom. Exatamente como seus clientes vão acessar.</div>
+      </div>
+      <div class="diff-card reveal reveal-delay-2">
+        <div class="diff-icon">🔧</div>
+        <div class="diff-title">Personalização rápida e documentada</div>
+        <div class="diff-body">Código comentado, variáveis de cor no topo, estrutura modular. Qualquer desenvolvedor (ou você mesmo) consegue trocar logo, cores e textos em minutos — sem medo de quebrar tudo.</div>
+      </div>
+      <div class="diff-card reveal reveal-delay-3">
+        <div class="diff-icon">📦</div>
+        <div class="diff-title">Entrega com suporte incluso</div>
+        <div class="diff-body">Entrego o site 100% pronto + 7 dias de suporte por WhatsApp para dúvidas de personalização. Se travar em algo, estou junto. Diferente de comprar template em marketplace e ficar sozinho.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section class="section" id="processo">
+  <div class="container">
+    <div class="grid2">
+      <div class="reveal">
+        <span class="section-label">Como funciona</span>
+        <h2 class="section-h2">Do contato à entrega em menos de 24 horas.</h2>
+        <p class="section-lead">Sem reuniões infinitas. Sem escopo que cresce. Um fluxo limpo do início ao fim.</p>
+      </div>
+      <div>
+        <div class="process-steps">
+          <div class="process-step reveal reveal-delay-1">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <div class="step-title">Você escolhe o modelo</div>
+              <div class="step-body">Visualiza os 6 produtos, decide qual estilo se encaixa no seu escritório ou cliente. Sem compromisso ainda.</div>
+            </div>
+          </div>
+          <div class="process-step reveal reveal-delay-2">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <div class="step-title">Envia a solicitação</div>
+              <div class="step-body">Preenche o formulário ou me chama no WhatsApp com o modelo desejado e os dados do escritório (nome, OAB, área, cores preferidas).</div>
+            </div>
+          </div>
+          <div class="process-step reveal reveal-delay-3">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <div class="step-title">Personalizamos juntos</div>
+              <div class="step-body">Adapto o template com a identidade do escritório: logo, cores, textos, informações de contato. Sem custo adicional para o padrão.</div>
+            </div>
+          </div>
+          <div class="process-step reveal reveal-delay-4">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <div class="step-title">Entrega do arquivo final</div>
+              <div class="step-body">Você recebe o ZIP completo com o site pronto para subir em qualquer hospedagem — cPanel, Netlify, GitHub Pages, onde preferir.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="section testimonial-section">
+  <div class="container">
+    <div class="testimonial-inner">
+      <div class="testimonial-quote reveal">
+        Precisava de um site profissional rápido para começar a captar clientes. Em menos de um dia já estava no ar com a minha cara. Melhor investimento do mês.
+      </div>
+      <div class="testimonial-author reveal reveal-delay-1">
+        <div class="testimonial-avatar">ML</div>
+        <div>
+          <div class="testimonial-name">Mariana Leal</div>
+          <div class="testimonial-role">Advogada Trabalhista · Recife</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Dúvidas</span>
+      <h2 class="section-h2">Perguntas frequentes.</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Posso usar o site para um cliente meu?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-body">
+          <div class="faq-body-inner">Sim. Você pode comprar e entregar como parte de um projeto seu para um escritório. Não há restrição de uso final. O que não está incluído é revender o template em bruto (sem personalização) como produto digital próprio sem autorização prévia.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Preciso de hospedagem paga para usar?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-body">
+          <div class="faq-body-inner">Não necessariamente. Os sites funcionam perfeitamente em hospedagens gratuitas como Netlify, GitHub Pages ou Vercel. Se quiser usar um domínio próprio (ex: escritoriotal.adv.br), precisará de um domínio registrado — o que custa cerca de R$ 40/ano.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Posso alterar textos, cores e logo sozinho?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-body">
+          <div class="faq-body-inner">Sim. Todo o código é comentado e as variáveis de cor ficam no topo do CSS — troca em segundos. Para textos, é só editar o HTML diretamente. Se não souber, me manda os dados e personalizo para você sem custo adicional (durante os 7 dias de suporte incluso).</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Os textos são fictícios? Posso usar direto?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-body">
+          <div class="faq-body-inner">Os templates vêm com textos de exemplo (marcas fictícias, dados simulados). Você deve substituir pelo conteúdo real do escritório — nome, OAB, áreas reais de atuação, contatos verdadeiros. Isso faz parte do processo de personalização que fazemos juntos.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Tem integração com WhatsApp ou formulário de e-mail?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-body">
+          <div class="faq-body-inner">Todos os modelos têm formulário de contato embutido. Para envio de e-mail real (ex: via Formspree ou EmailJS) ou botão flutuante de WhatsApp, posso incluir na personalização — sem custo adicional para esses dois recursos.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Posso pedir customizações além do padrão?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-body">
+          <div class="faq-body-inner">Sim. Novas seções, design diferente, integração com sistema de agendamento ou CRM — tudo orçado separadamente. Me descreve o que precisa e faço a proposta. Geralmente respondo em poucas horas.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contato">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-left">
+        <span class="section-label">Contato</span>
+        <h2 class="contact-h2 reveal">Vamos conversar sobre o seu projeto.</h2>
+        <p class="contact-lead reveal reveal-delay-1">Preencha o formulário com os detalhes do que você precisa. Respondo em até poucas horas — geralmente bem antes.</p>
+        <div class="contact-details reveal reveal-delay-2">
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📧</div>
+            <a href="mailto:contato.gabriellandrade@gmail.com">contato.gabriellandrade@gmail.com</a>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📱</div>
+            <a href="https://wa.me/5581998311633" target="_blank">+55 81 99831-1633 · WhatsApp</a>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🔗</div>
+            <a href="https://linkedin.com/in/gabriel-andrade-37b97b324/" target="_blank">LinkedIn · Gabriel Andrade</a>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📍</div>
+            <span>Recife, PE · Atendimento nacional online</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal reveal-delay-1" id="contactFormWrapper">
+        <div id="formContent">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Nome completo</label>
+              <input class="form-input" type="text" id="fieldNome" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">WhatsApp / E-mail</label>
+              <input class="form-input" type="text" id="fieldContato" placeholder="Seu contato" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Produto de interesse</label>
+            <select class="form-select" id="fieldProduto">
+              <option value="">Selecione um modelo...</option>
+              <option>Cível · Vellum & Costa (Modelo 01) — R$ 297</option>
+              <option>Cível · Vale & Sardenberg (Modelo 02) — R$ 297</option>
+              <option>Trabalhista · Martelo Norte (Modelo 03) — R$ 297</option>
+              <option>Trabalhista · Rocha Nóbrega (Modelo 04) — R$ 297</option>
+              <option>Tributário · Tenório & Andrade (Modelo 05) — R$ 397</option>
+              <option>Tributário · NexoFiscal (Modelo 06) — R$ 397</option>
+              <option>Pacote Completo — todos os 6 modelos — R$ 1.197</option>
+              <option>Quero discutir um projeto personalizado</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Nome do escritório</label>
+            <input class="form-input" type="text" id="fieldEscritorio" placeholder="Ex: Silva & Oliveira Advogados">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mensagem</label>
+            <textarea class="form-textarea" id="fieldMsg" placeholder="Conte o que precisa — área de atuação, cores, estilo, prazo..."></textarea>
+          </div>
+          <button class="btn-submit" onclick="handleSubmit()">
+            Enviar solicitação →
+          </button>
+          <div class="form-note">Respondo em até algumas horas · Sem compromisso</div>
+        </div>
+        <div class="success-msg" id="successMsg">
+          <div class="success-icon">✓</div>
+          <div class="success-title">Mensagem enviada!</div>
+          <div class="success-body">Recebi sua solicitação e retorno em breve por WhatsApp ou e-mail. Obrigado pela confiança.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Gabriel Andrade · Sites Jurídicos</div>
+    <div class="footer-links">
+      <a href="#sobre">Sobre</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#contato">Contato</a>
+      <a href="https://wa.me/5581998311633" target="_blank">WhatsApp</a>
+    </div>
+    <div class="footer-copy">© 2026 · Recife, PE</div>
+  </div>
+</footer>
+
+<script>
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+const themeToggle = document.getElementById('themeToggle');
+let isDark = true;
+themeToggle.addEventListener('click', () => {
+  isDark = !isDark;
+  document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+  themeToggle.textContent = isDark ? '☽' : '☀';
+});
+
+const hamburger = document.getElementById('hamburgerBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileClose = document.getElementById('mobileClose');
+hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
+mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+function closeMobile() { mobileMenu.classList.remove('open'); }
+
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => observer.observe(el));
+
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const body = item.querySelector('.faq-body');
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => {
+    i.classList.remove('open');
+    i.querySelector('.faq-body').style.maxHeight = '0';
+  });
+  if (!wasOpen) {
+    item.classList.add('open');
+    body.style.maxHeight = body.scrollHeight + 'px';
+  }
+}
+
+function openContact(produto) {
+  const sel = document.getElementById('fieldProduto');
+  for (let i = 0; i < sel.options.length; i++) {
+    if (sel.options[i].text.includes(produto.split('·')[1]?.split('(')[0]?.trim() || produto)) {
+      sel.selectedIndex = i; break;
+    }
+  }
+  document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });
+}
+
+function handleSubmit() {
+  const nome = document.getElementById('fieldNome').value.trim();
+  const contato = document.getElementById('fieldContato').value.trim();
+  if (!nome || !contato) {
+    alert('Por favor, preencha pelo menos nome e contato.');
+    return;
+  }
+  const produto = document.getElementById('fieldProduto').value;
+  const escritorio = document.getElementById('fieldEscritorio').value;
+  const msg = document.getElementById('fieldMsg').value;
+  const waMsg = encodeURIComponent(
+    `Olá Gabriel! Tenho interesse em um site jurídico.\n\n` +
+    `*Nome:* ${nome}\n` +
+    `*Contato:* ${contato}\n` +
+    (produto ? `*Produto:* ${produto}\n` : '') +
+    (escritorio ? `*Escritório:* ${escritorio}\n` : '') +
+    (msg ? `\n*Detalhes:* ${msg}` : '')
+  );
+  window.open(`https://wa.me/5581998311633?text=${waMsg}`, '_blank');
+  document.getElementById('formContent').style.display = 'none';
+  document.getElementById('successMsg').classList.add('visible');
+}
+
+const smooth = document.querySelectorAll('a[href^="#"]');
+smooth.forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (id === '#') return;
+    const el = document.querySelector(id);
+    if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
+  });
+});
+</script>
+</body>
+</html>
