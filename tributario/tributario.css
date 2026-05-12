@@ -1088,9 +1088,9 @@ textarea, input, select { font: inherit; }
     .nav-links a { font-size: 1rem; color: var(--text); }
     .hamburger { display: flex; z-index: 1001; position: relative; }
     .hero-content { flex-direction: column; padding-top: 7rem; text-align: center; }
-    .hero-visual { width: 100%; display: flex; justify-content: center; }
     .hero-card { min-width: 260px; }
-    .hero-badge { left: 0; }
+    .hero-scroll { display:none; }
+    .hero-badge { left: 0; margin-bottom: 10px;}
     .hero-actions { justify-content: center; }
     .hero-desc { margin: 0 auto 2.5rem; }
     .statsbar-inner { flex-wrap: wrap; gap: 1.5rem; justify-content: center; }
@@ -1101,6 +1101,7 @@ textarea, input, select { font: inherit; }
     .tcard { padding: 2rem 1.5rem; }
     .cform-row { grid-template-columns: 1fr; }
     .tl-item, .tl-item.tl-right { flex-direction: column; gap: 1rem; width: 100%; }
+    .ring-1 {display: none;}
 }
 
 @media (max-width: 480px) {
